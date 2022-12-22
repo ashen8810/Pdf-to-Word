@@ -1,0 +1,9 @@
+Flask==2.0.3
+requests
+Werkzeug
+gunicorn
+Jinja2
+pyrebase
+numpy
+pyjwt
+pdf2docx

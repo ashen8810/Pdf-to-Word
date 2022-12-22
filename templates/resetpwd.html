@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Reset your password</title>
+  </head>
+  {% extends 'base.html' %}
+
+  {% block content %}
+  	<body class="img js-fullheight" style="background-image: url(static/images/bg4.jpg); background-position: center">
+
+	<style>
+		body,html {
+			height: 100%;
+		}
+	</style>
+
+    {% for message in get_flashed_messages() %}
+
+	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+	  {{ message }}{{msg}}
+	  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+	</div>
+    {% endfor %}
+
+	<div class="container-fluid h-100">
+    <div class="row justify-content-center align-items-center h-100">
+        <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <form action="" method="POST">
+				<h4 class="text-center"> Please reset your password </h4>
+                <div class="form-group">
+                    <input _ngcontent-c0="" name="email" class="form-control form-control-lg" placeholder="Enter email" type="text">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-info btn-lg btn-block">Reset Password</button>
+                </div>
+            </form>
+        </div>
+                </div>
+
+                </div>
+
+{% endblock %}
