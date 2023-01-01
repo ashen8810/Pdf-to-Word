@@ -7,3 +7,8 @@ pyrebase
 numpy
 pyjwt
 pdf2docx
+tflearn
+tensorflow
+pickle
+wikipedia
+beautifulsoup4
