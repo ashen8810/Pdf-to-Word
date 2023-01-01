@@ -12,3 +12,4 @@ tensorflow
 pickle
 wikipedia
 beautifulsoup4
+nltk
